@@ -7,5 +7,6 @@ CMD ["npm","run","start"]
 
 ### 2 step ###
 FROM nginx
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 
